@@ -233,10 +233,19 @@ template {
   overflow: hidden;
 }
 
+/* COLOURS */
+/* 
+#f4f1de
+#e07a5f
+#3d405b
+#81b29a
+#f2cc8f
+ */
+
 /* MAIN STYLES */
 
 * {
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
   font-family: 'Playfair Display', serif;
 }
 
@@ -248,7 +257,7 @@ template {
 }
 
 footer {
-  height: 600px;
+  /* height: 600px; */
   background-color: #e9c46a;
 }
 
@@ -398,6 +407,8 @@ video {
   margin: 0 auto;
   justify-content: space-between;
   /* width: 1600px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .profilePic {
@@ -425,6 +436,8 @@ video {
   /* height: 500px; */
   max-width: 1600px;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .skill {
@@ -500,6 +513,7 @@ hr {
 
 input {
   height: 50px;
+  border-radius: 40px;
 }
 
 footer h2 {
@@ -549,6 +563,7 @@ footer h2 {
 
 textarea {
   max-width: 100%;
+  border-radius: 40px;
 }
 
 .contact form button {
@@ -569,10 +584,10 @@ textarea {
   display: flex;
   align-items: center;
   max-width: 1600px;
-  justify-content: center;
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 60px;
+  justify-content: center;
 }
 
 .bottomSocial {
