@@ -239,8 +239,8 @@ template {
 }
 
 section {
-  height: 600px;
-  background-color: #2a9d8f;
+  /* height: 600px; */
+  /* background-color: #2a9d8f; */
 }
 
 .hero {
@@ -272,8 +272,20 @@ li {
   text-decoration: none;
 }
 
+li:hover {
+  border-bottom: 1px solid white;
+}
+
 h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
   font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
 }
 
 .heroContent {
@@ -309,4 +321,84 @@ h1 {
 .btn:active {
   background-color: #e9c46a;
   color: #2a9d8f;
+}
+
+.logo {
+  height: 110px;
+  margin: 10px;
+}
+
+.icon {
+  margin: 20px;
+}
+
+/* ABOUT */
+.aboutSection {
+  display: flex;
+  justify-content: space-around;
+  color: #264653;
+  padding: 30px;
+  background-color: #2a9d8f;
+}
+
+.profilePic {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 300px;
+  border-radius: 150px;
+}
+
+.aboutInfo {
+  line-height: 3rem;
+}
+
+/* SKILLS */
+
+.skillsSection {
+  height: 500px;
+}
+
+.skill {
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+.skillsTitle {
+  text-align: center;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+/* PROJECTS */
+.projectSection {
+  background-color: #e76f51;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.project {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projectText {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
