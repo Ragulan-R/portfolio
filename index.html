@@ -16,12 +16,15 @@
   <body>
     <section class="hero">
       <nav>
-        <img class="logo" src="./thefinallogo.png" alt="logo" />
-        <ul>
+        <img class="logo" src="./logogif.gif" alt="logo" />
+        <ul id="navList">
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
       <video src="./toronto.mp4" muted loop autoplay></video>
       <div class="overlay"></div>
@@ -226,7 +229,7 @@
 
       <section class="bottomLogos">
         <div>
-          <img class="logo" src="./thefinallogo.png" alt="logo" />
+          <img class="logo" src="./logogif.gif" alt="logo" />
         </div>
         <div class="bottomSocial">
          <div class="twitter">
@@ -244,7 +247,6 @@
                 </svg>
               </a>
            </div>
-
            <div class="github">
               <a href="github.com" class="icon">
                 <svg
@@ -260,7 +262,6 @@
                 </svg>
               </a>
            </div>
-
             <div class="linkedin">
               <a href="linkedin.com" class="icon">
                 <svg
@@ -276,13 +277,10 @@
                 </svg>
               </a>
             </div>
-
-
           </div>
         </div>
       </section>
     </footer>
-
     <script src="./app.js"></script>
   </body>
 </html>

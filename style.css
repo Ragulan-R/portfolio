@@ -265,6 +265,11 @@ ul {
   justify-content: space-around;
   width: 500px;
   margin-top: 70px;
+  align-items: center;
+}
+
+ul.show {
+  display: block;
 }
 
 li {
@@ -307,6 +312,14 @@ a {
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
 }
 
 .social {
@@ -409,7 +422,7 @@ video {
 /* SKILLS */
 
 .skillsSection {
-  height: 500px;
+  /* height: 500px; */
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -426,7 +439,9 @@ video {
 
 .skillsContainer {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+
   justify-content: center;
   justify-content: space-around;
 }
@@ -438,13 +453,16 @@ video {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  height: 800px;
+  /* height: 800px; */
 }
 
 .project {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  /* height: 400px; */
   margin: 10px;
+  border: 10px solid #e96544;
+  border-radius: 40px;
+  padding: 5px;
 }
 
 .projectContainer {
@@ -559,4 +577,76 @@ textarea {
 
 .bottomSocial {
   display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    margin: 30px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    margin: 0px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .heroMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .heroBtn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutInfo {
+    text-align: center;
+  }
+
+  .bottomLogos {
+    display: none;
+  }
+
+  /* .bottomSocial {
+    margin-right: 353px;
+  } */
 }
