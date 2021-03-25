@@ -18,11 +18,13 @@
       <nav>
         <img class="logo" src="./thefinallogo.png" alt="logo" />
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
+      <video src="./toronto.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
       <div class="heroMain">
         <div class="heroContent">
           <h1>
@@ -30,10 +32,10 @@
             Ravichandran
           </h1>
           <p>Front End Developer</p>
-          <div class="heroBtn btn">About Me</div>
+          <div class="heroBtn btn"><a href="#about">About Me</a></div>
         </div>
         <div class="social">
-          <div>
+          <div class="sidenav">
             <a href="twitter.com" class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +50,7 @@
               </svg>
             </a>
           </div>
-          <div>
+          <div class="sidenav">
             <a href="github.com" class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,7 @@
             </a>
           </div>
 
-          <div>
+          <div class="sidenav">
             <a href="linkedin.com" class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,9 +85,9 @@
       </div>
     </section>
 
-    <section class="aboutSection">
+    <section class="aboutSection" id="about">
       <div class="aboutInfo">
-        <h2>About Me</h2>
+        <h2>👋 About Me 👋</h2>
         <p>
           Hi! My name is Ragulan, I'm a front end developer based in Toronto,
           passionate about web development and design.
@@ -98,8 +100,8 @@
 
     <!-- SKILLS -->
 
-    <section class="skillsSection">
-      <h2 class="skillsTitle">Skills</h2>
+    <section class="skillsSection" id="skills">
+      <h2 class="skillsTitle">🛠️ Skills 🛠️</h2>
       <div class="skillsContainer">
         <div class="skill">
           <i class="fab fa-html5 fa-5x"></i>
@@ -129,38 +131,59 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projectSection">
-      <h2>Projects</h2>
+    <section class="projectSection" id="projects">
+      <h2>💻 Projects 💻</h2>
       <div class="projectContainer">
         <div class="project">
-          <img class="projectImage" src="" alt="" />
+          <img class="projectImage" src="./Pokemonprojectimage.png" alt="" />
           <h2>Pokemon Generator</h2>
           <p class="projectText">
             Using the Pokemon Api, you are able to find a random pokemon and
             save your favourite 3 pokemon!
           </p>
           <hr />
-          <p class="projectText">View Here</p>
+          <p class="projectText">
+            <a
+              class="link"
+              href="https://github.com/aaliyah-ragulan/pokemon-generator-project-2"
+            >
+              View Here</a
+            >
+          </p>
         </div>
         <div class="project">
-          <img class="projectImage" src="" alt="" />
+          <img class="projectImage" src="./stockifyprojectimage.png" alt="" />
           <h2>Stockify</h2>
           <p class="projectText">
             Inspired by Unsplash, users are able to find high quality stock
             images for their next creative project.
           </p>
           <hr />
-          <p class="projectText">View Here</p>
+          <p class="projectText">
+            <a
+              class="link"
+              href="https://github.com/Ragulan-R/ragulanRavichandranProjectThree"
+            >
+              View Here</a
+            >
+          </p>
         </div>
         <div class="project">
-          <img class="projectImage" src="" alt="" />
+          <img class="projectImage" src="./pageturnerimage.png" alt="" />
           <h2>Book Finder</h2>
           <p class="projectText">
             An app to help readers find new books and allow users to set and
             meet their reading goals
           </p>
           <hr />
-          <p class="projectText">View Here</p>
+          <p class="projectText">
+            <a
+              class="link"
+              href="https://github.com/Page-Turners/project-4-page-turners"
+            >
+              View Here</a
+            >
+          </p>
         </div>
       </div>
     </section>
